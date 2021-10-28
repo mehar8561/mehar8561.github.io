@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GeoAR.js Essex Hall</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+  </head>
+
+  <body style="margin: 0; overflow: hidden;">
+
+    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'> 
+      <a-text 
+      text="value: 
+      You are at Essex Hall \n \n
+      Essex Hall is home to the Faculty of Science, \n 
+      including the Departments of Chemistry and \n 
+      Biochemistry, Forensic Science, and Physics \n \n" 
+      color="blue"    
+      rotation="-90 0 0"
+      gps-entity-place="latitude: 42.30509546137389; longitude: -83.06675840202075;"
+      ></a-text>
+      <a-marker-camera preset='custom' type='pattern' url='./pattern-logo.patt'></a-marker-camera>
+   </a-scene>
+  </body>
+</html>
