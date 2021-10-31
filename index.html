@@ -8,13 +8,21 @@
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+    <script>
+      function closeWindow()
+      {
+        window.open('','_parent','');
+        window.close();
+      }
+      </script>
   </head>
 
   <body style="margin: 0; overflow: hidden;">
 
-    <a href="javascript:close_window();">close</a>
+    <a href="javascript:closeWindow();">close</a>
 
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+      <a href="javascript:closeWindow();">close</a>
       <a-text 
       text="value: 
       You are at EPICentre! \n \n
@@ -28,6 +36,7 @@
       rotation="-90 0 0"
       gps-entity-place="latitude: 42.30456195766808; longitude: -83.0640182020208;"
       ></a-text>
+      <a href="javascript:closeWindow();">close</a>
       <a-marker-camera preset='custom' type='pattern' url='./pattern-logo.patt'></a-marker-camera>
    </a-scene>
   </body>
