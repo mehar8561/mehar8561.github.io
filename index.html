@@ -19,10 +19,14 @@
 
   <body style="margin: 0; overflow: hidden;">
 
-    <a href="javascript:closeWindow();">close</a>
+    <!-- <a href="javascript:closeWindow();">close</a> -->
 
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
-      <a href="javascript:closeWindow();">close</a>
+      <!-- <a href="javascript:closeWindow();">close</a> -->
+      <a class="top-link hide" href=""   >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 10 500 50" ><path d="M12 6H0l6-6z" /></svg>
+        <span class="screen-reader-text" >Main Page</span>
+      </a>
       <a-text 
       text="value: 
       You are at EPICentre! \n \n
