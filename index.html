@@ -41,9 +41,7 @@
       gps-entity-place="latitude: 42.30456195766808; longitude: -83.0640182020208;"
       ></a-text>
       <a href="javascript:closeWindow();">close</a>
-      <a href="blablabla" onclick="setTimeout(function(){var ww = window.open(window.location, '_self'); ww.close(); }, 1000);">
-        If you click on this the window will be closed after 1000ms
-    </a>
+      ton class="closeButton" style="cursor: pointer" onclick="window.close();">Close Window</button>
       <button type="button" 
         onclick="window.open('', '_self', ''); window.close();">Discard</button>
       <a-marker-camera preset='custom' type='pattern' url='./pattern-logo.patt'></a-marker-camera>
