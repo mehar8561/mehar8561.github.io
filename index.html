@@ -42,6 +42,8 @@
       ></a-text>
       <a href="javascript:closeWindow();">close</a>
       <a href="javascript:window.open('','_self').close();">close2</a>
+      <button type="button" 
+        onclick="window.open('', '_self', ''); window.close();">Discard</button>
       <a-marker-camera preset='custom' type='pattern' url='./pattern-logo.patt'></a-marker-camera>
    </a-scene>
   </body>
